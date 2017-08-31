@@ -1,0 +1,32 @@
+.local-weather {
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__location {
+    display: flex;
+    margin-top: 50px;
+    font-family: Tahoma;
+    font-size: 2em
+  }
+
+  &__icon {
+    display: flex;
+    padding-top: 50px;
+  }
+
+  &__temp {
+    display: flex;
+    padding-top: 50px;
+    font-family: Tahoma;
+    font-size: 2.5em
+  }
+
+  &__unit {
+    display: flex;
+    padding-top: 50px;
+  }
+}

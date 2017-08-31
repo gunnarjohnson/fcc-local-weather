@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Local Weather</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
 
-  
+  <link rel="stylesheet" href="temp/styles/styles.css">
+
 </head>
 
 <body>
-  <body>
-  <div class ="temp-center--box">
-    <div class ="local-weather--location">
+  <div class ="local-weather__box">
+    <div class ="local-weather__location">
       <div id="city">City</div>
       <div id="state">State</div>
     </div>
-    <div class ="local-weather--icon">
+    <div class ="local-weather__icon">
       <canvas id="weather-temp--icon" width:"64" height:"64"></canvas>
     </div>
-    <div class ="local-weather--temp">
+    <div class ="local-weather__temp">
       <div id="weather-temp--actual"></div>
       <div id="weather-temp--unit"></div>
     </div>
-    <div class ="local-weather--unit">
+    <div class ="local-weather__unit">
       <button id="weather-temp--fahrenheit" class ="btn">F</button>
       <button id="weather-temp--celsius" class ="btn">C</button>
     </div>
   </div>
 </body>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script src='https://rawgithub.com/darkskyapp/skycons/master/skycons.js'></script>
 
-    <script src="js/index.js"></script>
+<script src="assets/scripts/app.js"></script>
 
-</body>
 </html>
