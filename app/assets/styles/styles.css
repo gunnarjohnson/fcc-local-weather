@@ -1,0 +1,37 @@
+.temp-center--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.local-weather--location {
+  display: flex;
+  margin-top: 50px;
+  font-family: Tahoma;
+  font-size: 2em
+}
+
+.local-weather--icon {
+  display: flex;
+  padding-top: 50px;
+}
+
+.local-weather--temp {
+  display: flex;
+  padding-top: 50px;
+  font-family: Tahoma;
+  font-size: 2.5em
+}
+
+.local-weather--unit {
+  display: flex;
+  padding-top: 50px;
+}
+
+.btn {
+  font-family: Verdana;
+  font-size: 1.25em;
+  width: 2em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
