@@ -1,0 +1,27 @@
+#weather-temp {
+
+  &--icon {
+    height: 100px;
+    width: 200px;
+
+    @mixin atSmall {
+      height: 150px;
+      width: 300px;
+    }
+
+    @mixin atMedium {
+      height: 200px;
+      width: 400px;
+    }
+
+    @mixin atLarge {
+      height: 225px;
+      width: 450px;
+    }
+
+    @mixin atLargest {
+      height: 250px;
+      width: 500px;
+    }
+  }
+}

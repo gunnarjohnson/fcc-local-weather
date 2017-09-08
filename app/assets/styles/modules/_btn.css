@@ -8,7 +8,19 @@
   width: 1.5em;
   margin: 0 1em;
 
+  @mixin atSmall {
+    font-size: 2em;
+  }
+
   @mixin atMedium {
     font-size: 2.5em;
+  }
+
+  @mixin atLarge {
+    font-size: 3em;
+  }
+
+  @mixin atLargest {
+    font-size: 3.5em;
   }
 }
