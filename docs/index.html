@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Weather</title>
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+  <div class ="local-weather__box">
+    <div class ="local-weather__location">
+      <div id="city"></div>
+      <div id="state"></div>
+    </div>
+    <div class ="local-weather__icon">
+      <canvas id="weather-temp--icon" width:"64" height:"64"></canvas>
+    </div>
+    <div class ="local-weather__temp">
+      <div id="weather-temp--actual"></div>
+      <div id="weather-temp--unit"></div>
+    </div>
+    <div class ="local-weather__unit">
+      <button id="weather-temp--fahrenheit" class ="btn">F</button>
+      <button id="weather-temp--celsius" class ="btn">C</button>
+    </div>
+  </div>
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://rawgithub.com/darkskyapp/skycons/master/skycons.js'></script>
+
+<script src="scripts/app.js"></script>
+
+</html>
