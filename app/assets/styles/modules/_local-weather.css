@@ -1,32 +1,61 @@
 .local-weather {
 
   &__box {
-    display: flex;
+    display: grid;
+    grid-template-columns: [col-start] 15% [col-content--start] 70% [col-content--end] 15% [col-end];
+    grid-template-rows: [row-start] 15% [row-weather__location] 1fr [row-weather__icon] 1fr [row-weather__temp] 1fr [row-weather__unit] 1fr [row-footer] 15% [row-end];
+    height: 100%;
+    width: 100%;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
   }
 
   &__location {
     display: flex;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-column: col-content--start / col-content--end;
+    grid-row: row-weather__location / row-weather__icon;
+    /*margin-top: 50px;*/
     font-family: Tahoma;
-    font-size: 2em
+    font-size: 2em;
+
+    @mixin atMedium {
+      font-size: 4em;
+    }
   }
 
   &__icon {
     display: flex;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-column: col-content--start / col-content--end;
+    grid-row: row-weather__icon / row-weather__temp;
+    /*padding-top: 50px;*/
   }
 
   &__temp {
     display: flex;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-column: col-content--start / col-content--end;
+    grid-row: row-weather__temp / row-weather__unit;
+    /*padding-top: 50px;*/
     font-family: Tahoma;
-    font-size: 2.5em
+    font-size: 2.5em;
+
+    @mixin atMedium {
+      font-size: 4em;
+    }
   }
 
   &__unit {
     display: flex;
-    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-column: col-content--start / col-content--end;
+    grid-row: row-weather__unit / row-footer;
+    /*padding-top: 50px;*/
   }
 }
